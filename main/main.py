@@ -15,11 +15,22 @@ import json
 import paho.mqtt.client as mqtt
 
 
+#Cpu Temp Checker
+from gpiozero import CPUTemperature
+cpu = CPUTemperature()
+
+
+#Var declars
+model = "ModelName"
+owner = "Nev Aerospace"
+returnadd = "Return adress"
 
 
 
-
-
-
+#INtro
+print("Welcome to", model + "Python bassed control module")
+print("
+#CPU Print
+print(cpu.temperature)
 #Sense hat wake up
 sense.show.message("HAT is connected)
