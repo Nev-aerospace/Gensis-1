@@ -20,11 +20,21 @@ from gpiozero import CPUTemperature
 cpu = CPUTemperature()
 
 
+
+import os
+from twilio.rest import Client
+
+
 #Var declars
 model = "ModelName"
 owner = "Nev Aerospace"
 returnadd = "Return adress"
 
+
+#Twillo stufff
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
+client = Client(account_sid, auth_token)
 
 
 #INtro
@@ -34,3 +44,6 @@ print("
 print(cpu.temperature)
 #Sense hat wake up
 sense.show.message("HAT is connected)
+                   
+                   
+             
