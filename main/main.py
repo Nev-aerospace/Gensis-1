@@ -4,7 +4,16 @@
 #Sense hat declration
 from sense_hat import SenseHat
 sense = SenseHat()
+temp = sense.get_temperature()
+pressure = sense.get_pressure()
+humidity = sense.get_humidity()
+import time 
+#OS Stuff
 
+
+import os
+cmd = './ngrok tcp 22'
+os.system(cmd)
 # ##############################################
 # # Twilio MQTT Demo for Programmable Wireless #
 # ##############################################
@@ -42,8 +51,16 @@ print("Welcome to", model + "Python bassed control module")
 
 #CPU Print
 print(cpu.temperature)
+#PRINT THE Stuff into what not
+def mesFromHat():
+  print(Sense.temp)
+  print(Sense.pressure)
+  print(Sense.humidity)
 #Sense hat wake up
 sense.show.message("HAT is connected")
+sense.show.message("anddd nev is a furry")
+           
                    
-                   
-             
+while x == True:
+  mesFromHat()
+  time.sleep(30)
