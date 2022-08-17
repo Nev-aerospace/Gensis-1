@@ -1,8 +1,22 @@
 [
     {
-        "Phone Number": "#### ####",
-        "NevADress": "",
-        "Twillo SSID": "",
-        "MODEL NAME": ""
+        "PhoneNumber": "",
+        "Adress": "",
+        "TwilloSSID": "",
+        "ModelName": "",
+        "Mysql": {
+            "Host": "",
+            "User": "",
+            "Password": ""
+        },
+        "Temps": {
+            "WarningTemp": "",
+            "MaxTemp": ""
+        },
+        "Alt": {
+            "AlertAlt": "",
+            "WarmAlt": "",
+            "DeployAlt": ""
+        }
     }
 ]
