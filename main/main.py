@@ -1,18 +1,31 @@
+
+#    Nev Aerospace flight controller built for the raspberry PI ecosystem
+#     Copyright (C) 2022  StoneMcYT (https://github.com/StoneMcYT)
+
+#     This program is free software: you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU General Public License for more details.
+
+#     You should have received a copy of the GNU General Public License
+#     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 ##############################################
 # IMPORT EVERYTHING #
 ##############################################
 # Sense hat declration
 
 from time import sleep
-
 import os
 from gpiozero import CPUTemperature
-
 import json
 import random
-
 from sense_hat import SenseHat
-
 import db
 
 sense = SenseHat()
@@ -31,7 +44,8 @@ with open("./config.json"
     data = json.dump(jsonfile)
 print(data)
 
-# Sense Hat Deffs for Temp + pressure + humid
+# Sense
+#  Hat Deffs for Temp + pressure + humid
 temp = sense.get_temperature()
 pressure = sense.get_pressure()
 humidity = sense.get_humidity()
@@ -43,6 +57,12 @@ def MesFromHat():
     print(temp)
     print(pressure)
     print(humidity)
+
+def gyroReadOut():
+
+
+
+
 
 
 # ############################################## - DISABLED FOR NOW TILL STAGE 2 OR 3
@@ -104,9 +124,12 @@ def PreDataSend():
             input("Data Checking Launched set data post int in seconds: "))
 
 
-def DataSpliceMethod():
-    print("Data Spice shall begain now")
-    DataStatus = []
-    print(DataStatus)
-    for x in DataStatus
-    if DataStatus[2][x] << DataStatus9[2][x+1]
+
+
+
+
+
+
+
+
+# Call all the func bellow

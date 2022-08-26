@@ -1,3 +1,4 @@
+
 #    Nev Aerospace flight controller built for the raspberry PI ecosystem
 #     Copyright (C) 2022  StoneMcYT (https://github.com/StoneMcYT)
 
@@ -16,18 +17,12 @@
 
 
 
-from gpiozero import Servo
-from time import sleep
-
-servo = Servo(25)
-
-try:
-    while True:
-        servo.min()
-        sleep(0.5)
-        servo.mid()
-        sleep(0.5)
-        servo.max()
-        sleep(0.5)
-except KeyboardInterrupt:
-    print("Program stopped")
+#Mhm only run this when the flight is done and the data is set in the DB and ready to be processed d
+#Please make sure you are mentally sane when running this
+def DataSpliceMethod():
+    print("Data Splice shall begain now")
+    DataStatus = []
+    print(DataStatus)
+    for x in DataStatus:
+        if DataStatus[2][x] << DataStatus[2][x+1]:
+            print("Test ")
