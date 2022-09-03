@@ -21,7 +21,7 @@ def dbacces():
     print("DB Access module called ")
     mydb = mysql.connector.connect(
         host="localhost",
-        user="yourusername",
+        user="nevJev",
         password="yourpassword",
-        database="mydatabase"
+        database="flightDB"
     )
